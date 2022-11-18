@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 07</title>
+</head>
+<h1>Data de nascimento</h1>
+<div id="data"></div>
+<body>
+    <script>
+        let mes1 = "Janeiro"
+        let mes2 = "Fevereiro"
+        let mes3 = "Março"
+        let mes4 = "Abril"
+        let mes5 = "Maio"
+        let mes6 = "Junho"
+        let mes7 = "Julho"
+        let mes8 = "Agosto"
+        let mes9 = "Setembro"
+        let mes10 = "Outubro"
+        let mes11 = "Novembro"
+        let mes12 = "Dezembro"
+        let dia = prompt("Digite uma data");
+        let mes = prompt("Digite o mes");
+        let ano = prompt("Digite o ano");
+        let resultado;
+       if(mes == 1){resultado = " de " + mes1 + " "}
+       if(mes == 2){resultado = " de " + mes2 + " "}
+       if(mes == 3){resultado = " de " + mes3 + " "}
+       if(mes == 4){resultado = " de " + mes4 + " "}
+       if(mes == 5){resultado = " de " + mes5 + " "}
+       if(mes == 6){resultado = " de " + mes6 + " "}
+       if(mes == 7){resultado = " de " + mes7 + " "}
+       if(mes == 8){resultado = " de " + mes8 + " "}
+       if(mes == 9){resultado = " de " + mes9 + " "}
+       if(mes == 10){resultado = " de " + mes10 + " "}
+       if(mes == 11){resultado = " de " + mes11 + " "}
+       if(mes == 12){resultado = " de " + mes12 + " "}
+        document.getElementById("data").innerHTML = "Data de nascimento " + dia + resultado + ano;
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo para função SE Composta</title>
+</head>
+<body>
+    <h1>Função SE Composta</h1>
+    <div id="valor"></div>
+    <div id="valor2"></div>
+    <script>
+        let nomeAluno = prompt("Digite o nome do aluno ")
+        let nota1 = Number (prompt("Digite a primeira nota do aluno"));
+        let nota2 = Number (prompt("Digite a segunda nota do aluno"));
+        let nota3 = Number (prompt("Digite a segunda nota do aluno"));
+        let resultado;
+        let media = ((nota1 + nota2 )/ 3);
+        if(media > 6){resultado = " foi aprovado com média ";}
+        
+        
+        else{resultado = " foi reprovado com média ";}
+        document.getElementById("valor").innerHTML = "Nome: " + nomeAluno + "</br>O aluno " + nomeAluno + resultado + " com a media " + media;
+       
+        let  troca;
+        if(nota2 > nota1){
+            troca = nota2;
+            nota2 = nota1;
+            nota1 = troca;
+          }
+
+          
+        if(nota3 > nota1){
+            troca = nota3;
+            nota3 = nota1;
+            nota1 = troca;
+          }
+
+
+          
+        if(nota3 > nota2){
+            troca = nota3;
+            nota3 = nota2;
+            nota2 = troca;
+          }
+      document.getElementById("valor2").innerHTML = "Nota1: " + nota1 + "</br>Nota2: " + nota2 + "</br>Nota3: " + nota3;
+    </script>
+</body>
+</html>

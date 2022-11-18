@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercicio 03</title>
+</head>
+
+<body>
+    <h1>Pedidos</h1>
+    <div id="resposta"></div>
+    <script>
+        let bigsuper = "Big Super Sanduba R$ 5.00"
+        let quasesuper = "Quase Super Sanduba R$ 3.00"
+        let mirradus  = "Mirradus Sanduba R$ 1.50"
+      
+        let pedido1 = prompt("Digite o lanche que deseja ");
+       
+        let resultado;
+        if(pedido1 == 1){resultado = "Pedido: " + bigsuper};
+        if (pedido1 == 2){resultado = "Pedido: " + quasesuper};
+        if(pedido1 == 3){resultado = "Pedido: " + mirradus};
+
+        document.getElementById("resposta").innerHTML = resultado;
+        
+    </script>
+</body>
+</html>

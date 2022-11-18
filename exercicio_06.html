@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 06</title>
+</head>
+<body>
+    <h1>Calculo de comissão de um funcionario</h1>
+    <div id="valor"></div>
+    <script>
+        let nomefuncionario = prompt("Digite o nome do funcionario");
+        let vendas = Number (prompt("Digite o total de vendas"));
+        let resultado;
+        let comissao1 = 1.00
+        let comissao2 = 1.50
+        let comissao3 = 2.00
+        if(vendas < 250){resultado = "</br>Você atingiu " + vendas  + " em vendas" + "</br>Sua comissão será de: " +
+        (vendas * 1.00);}
+        else{"Você vendeu abaixo de 250 " ;}
+         if (vendas > 250){resultado = "</br>Você atingiu " + vendas  + " em vendas" + "</br>Sua comissão será de: " +
+        (vendas * 1.50);}
+        else{"Você vendeu abaixo de 250 " ;}
+        if(vendas > 500){resultado = "</br>Você atingiu " + vendas  + " em vendas" + "</br>Sua comissão será de: " +
+        (vendas * 2.00) ;}
+        else{"Você vendeu abaixo de 250 ";}
+
+        document.getElementById("valor"). innerHTML = "Nome do funcionario: " + nomefuncionario + resultado;
+    </script>
+</body>
+</html>
